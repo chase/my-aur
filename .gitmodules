@@ -1,0 +1,3 @@
+[submodule "simpleswitcher"]
+	path = simpleswitcher
+	url = https://github.com/seanpringle/simpleswitcher
