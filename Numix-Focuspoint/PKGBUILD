@@ -1,0 +1,16 @@
+pkgname=Numix-Focuspoint
+pkgver=20151108
+pkgrel=1
+pkgdesc=''
+arch=any
+license=GPL3
+depends=('gtk-engine-murrine')
+provides=("Numix-Focuspoint=${pkgver}")
+noextract=("${source[@]%%::*}")
+
+package() {
+  install -dm755 $pkgdir/usr/share/themes
+  cp -r $srcdir $pkgdir/usr/share/themes/Numix-Focuspoint
+}
+
+# vim:set sw=2 sts=2 et:
